@@ -1,0 +1,9 @@
+<h2>Your Address Book</h2>
+<ul class="persons">
+    <li *ngFor="let person of persons">
+        <a routerLink="/detail/{{person.fname}}">
+            {{person.fname}} {{person.lname}} 
+          </a>
+    </li>
+</ul>
+

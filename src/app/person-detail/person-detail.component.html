@@ -1,0 +1,13 @@
+<div *ngIf="person">
+    <h2>{{person.fname}}'s Details</h2>
+    <div><span>Full Name: </span>{{person.fname}} {{person.lname}}</div>
+    <div><span>Phone Number: </span>{{person.phone}}</div>
+    <div><span>Notes: </span>{{person.notes}}</div>
+
+    <div>
+        <label for="notes">Update Notes: </label>
+        <input id="notes" [(ngModel)]="person.notes" placeholder="kids names, hobbies etc.">
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+
+</div>

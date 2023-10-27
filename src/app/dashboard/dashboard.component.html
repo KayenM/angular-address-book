@@ -1,0 +1,8 @@
+<h2>Top Contacts</h2>
+<div class="contact-menu">
+  <a *ngFor="let person of persons"
+    routerLink="/detail/{{person.fname}}">
+    {{person.fname}}
+  </a>
+</div>
+
