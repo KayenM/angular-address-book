@@ -18,6 +18,6 @@ export class DashboardComponent implements OnInit {
 
   getPersons(): void {
     this.personService.getPersons()
-      .subscribe(persons => this.persons = persons.slice(1, 5));
+      .subscribe(persons => this.persons = persons.slice(0, 4));
   }
 }
