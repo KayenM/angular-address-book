@@ -17,20 +17,15 @@ export class PersonsComponent {
   //On component creation we call getPersons() which calls service to generate the mock contact info
   ngOnInit(): void {
     this.getPersons();
-    // console.log(this.persons)
   }
 
+  //Subscribe will wait for service to fetch data from api before assigning it
   getPersons(): void {
     this.personService.getPersons()
         .subscribe(persons => {
           this.persons = persons
-          console.log(this.persons)
-
-        });  //Subscribe will wait for service to fetch data from api before assigning it
-        
-    
+        });  
       }
-  
 }
 
 
