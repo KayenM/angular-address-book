@@ -31,5 +31,7 @@ export class PersonDetailComponent {
     this.location.back();
   }
 
+  //TODO: If using a backend, have a POST API call to change the notes for stored people.
+
 }
 

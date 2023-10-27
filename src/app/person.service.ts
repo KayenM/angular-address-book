@@ -29,7 +29,8 @@ export class PersonService {
     );
   }
 
-
+  //TODO: Use a cached system to fetch the matching user. Must change to matching by an ID not first name
+  //Randomperson API will not allow searching for user, find alternative solution
   getPerson(fname: string): Observable<Person | undefined> {
     return this.getPersons().pipe(
       map(persons => persons.find(person => person.fname === fname)),

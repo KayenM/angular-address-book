@@ -5,7 +5,7 @@ import { PersonDetailComponent } from './person-detail/person-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 
-
+//TODO: Add a route for an error page to redirect users when handling errors.
 const routes: Routes = [
   { path: 'persons', component: PersonsComponent },
   { path: 'detail/:fname', component: PersonDetailComponent },

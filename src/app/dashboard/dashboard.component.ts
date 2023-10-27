@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.getPersons();
   }
-
+  //TODO: Change to using | async to handle subscribe and unsubscribe
   getPersons(): void {
     this.personService.getPersons()
       .subscribe(persons => this.persons = persons.slice(0, 4));

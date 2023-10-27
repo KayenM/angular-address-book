@@ -49,6 +49,6 @@ describe('DashboardComponent', () => {
   it('should get and display a list of persons', () => {
     component.getPersons();
     expect(personService.getPersons).toHaveBeenCalled();
-    expect(component.persons).toEqual(mockPersons.slice(1, 5)); // Expected behavior as per your component code
+    expect(component.persons).toEqual(mockPersons.slice(1, 5)); 
   });
 });
